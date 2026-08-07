@@ -2,18 +2,28 @@
 
 > **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded fights · **answers in Spanish**
 
-You describe a mess in one messy paragraph. It tells you what is actually happening — including the
-part you left out about yourself — and gives you the moves.
+You give it everything you have on the situation — the actual messages, the history, the numbers,
+what you already said out loud. It tells you what is really happening, including the part you left
+out about yourself, and gives you the moves.
+
+**It is only as good as what you feed it.** A two-line summary gets you a two-line-summary answer.
+See [Getting a real answer out of it](#getting-a-real-answer-out-of-it) below — that section matters
+more than anything else in this README.
 
 ---
 
 ## What it looks like
 
-**You:**
+**You** — dumping the whole thing, not summarising it:
 
-> A client owes me the final payment. Three months of chasing. I've explained everything, sent long
-> messages, told him my team hasn't been paid. He replies in five words and keeps stalling. Last week
-> I said we'd stop working. Two days later I backed down.
+> Client owes me the final payment on a document job. Started in April, was supposed to be two weeks,
+> it's been three months. Here's the whole Telegram thread, screenshots attached. Short version: on
+> 24 July I proposed we send scans + originals + tracking, then he pays in full — he replied
+> *"perfect, let's do that."* On the 29th he threatened to demand a refund. On the 30th he paid €533
+> for notary costs. On 1 August I sent a long message saying if he won't honour the 24 July terms we
+> stop. On the 3rd I wrote that we'd finish the whole process anyway. He replied with a thumbs up.
+> Since then, silence. I still hold the notarised originals and the apostille. The nominee director
+> on his German entity is our person. My remaining balance is ~€2,400.
 
 **It answers:**
 
@@ -36,7 +46,50 @@ part you left out about yourself — and gives you the moves.
 Then comes the ladder of moves, what he will object at each step and your counter, the worst case
 prepared in advance, and the branches for everything you didn't mention.
 
+Notice what the answer used: the exact date of the *"perfect, let's do that,"* the wording of his
+five-word replies, the fact that the ultimatum was withdrawn two days later, who the nominee belongs
+to. **None of that survives a summary.** Had the input been *"a client owes me money and won't pay,"*
+the answer would have been a lecture on collecting debts.
+
 > Full worked example, start to finish: [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
+
+---
+
+## Getting a real answer out of it
+
+This is not a prompt that rewards brevity. The diagnosis is reconstruction: it works out what
+actually happened from the raw material, and it can only work with material you give it.
+
+**Paste the raw thing, don't retell it.** The actual messages, the thread, the email, the screenshot.
+Their exact words matter more than your description of their tone — half the diagnosis comes from how
+short their replies are and which of your arguments they ignored.
+
+**Say what already happened out loud.** What you've said in person or on a call, what you already
+apologised for, what's already been agreed. Otherwise it will hand you a message repeating things the
+other person has heard ten times — the single most common way its answers go wrong.
+
+**Give the timeline and the numbers.** When it started, when each thing was said, how long the
+silences were, the amounts, the deadlines. Timing changes the play completely: a reply in the heat of
+the moment is a different situation from one that has gone cold, where your silence has already
+become a "yes."
+
+**Say who these people really are to each other.** Who depends on whom, who can walk away, who has
+alternatives, what each side actually stands to lose. The side that looks weak in your telling is
+often the one holding the leverage.
+
+**Say what you actually want** — the money, an apology, to close it quietly, to keep the relationship,
+to never deal with them again. And what you're afraid of. Different goals produce genuinely different
+moves from the same facts.
+
+**Answer its questions.** It resolves the branches it can and then asks up to three questions — only
+the ones that would flip the recommendation. Those are the expensive gaps. Answering them is cheap.
+
+**Push back when it's wrong.** If it misread the situation, say so with the missing fact. It
+re-diagnoses instead of defending its previous answer.
+
+**Tell it the constraints.** *"Don't put an apology in writing," "this has to be a phone call,"
+"I can't threaten legal action."* Constraints shape the play; without them you'll get a move you
+can't actually execute.
 
 ---
 
