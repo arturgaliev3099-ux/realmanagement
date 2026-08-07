@@ -1,6 +1,6 @@
 # Real Management — negotiation and managerial combat
 
-> **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded fights · **answers in Spanish**
+> **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded negotiations · **answers in Spanish**
 
 You give it everything you have on the situation — the actual messages, the history, the numbers,
 what you already said out loud. It tells you what is really happening, including the part you left
@@ -145,14 +145,14 @@ merge up to 50 separate mentions.
 
 | Domain | # | | Domain | # |
 |---|--:|---|---|--:|
-| Fundamentals of the fight | 44 | | Authority and leadership | 34 |
+| Fundamentals of Hard Management | 44 | | Authority and leadership | 34 |
 | Social capital and alliances | 30 | | Productivity and habits | 28 |
 | Conflict and discipline | 27 | | Role dynamics | 26 |
 | Positional negotiation | 25 | | Complex B2B sales | 24 |
-| Influence and persuasion | 23 | | Picture of the world | 14 |
+| Influence and persuasion | 23 | | Conflicting worldviews | 14 |
 
-**The library — 1019 recorded fights.** Live sparring with the full dialogue and Arti's feedback on
-what failed and what would have been stronger. Not invented examples: real people fighting real
+**The library — 1019 recorded negotiations.** Live, with the full dialogue and Arti's feedback on
+what failed and what would have been stronger. Not invented examples: real people negotiating real
 situations and getting it wrong in front of everyone.
 
 | Sphere | Cases | | Quality | Cases |
