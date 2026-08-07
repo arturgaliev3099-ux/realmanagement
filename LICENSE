@@ -1,0 +1,76 @@
+# Licencia
+
+Este repositorio se publica bajo dos licencias distintas según el tipo de contenido.
+
+---
+
+## 1. Contenido — CC BY-NC-SA 4.0
+
+Se aplica a: `skills/negociar/data/` (el canon y la biblioteca de casos),
+`skills/negociar/SKILL.md`, `skills/negociar/EJEMPLO-NOVATO.md`, `README.md`.
+
+Copyright (c) 2026 Artur Galiev
+
+Licenciado bajo **Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0
+Internacional (CC BY-NC-SA 4.0)**.
+
+Texto legal completo: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es
+
+En resumen, eres libre de:
+
+- **Compartir** — copiar y redistribuir el material en cualquier medio o formato.
+- **Adaptar** — remezclar, transformar y construir a partir del material.
+
+Bajo estas condiciones:
+
+- **Reconocimiento** — debes dar crédito de forma adecuada a Arti Galiev
+  (https://instagram.com/arti_galiev) e indicar si se han hecho cambios.
+- **NoComercial** — no puedes usar el material para una finalidad comercial.
+- **CompartirIgual** — si remezclas o transformas el material, debes distribuir tu
+  contribución bajo la misma licencia que el original.
+
+**Aclaración sobre el uso comercial:** puedes aplicar la metodología en tu propio trabajo,
+en tu empresa y con tus clientes sin ninguna restricción. La cláusula NoComercial restringe
+únicamente la **redistribución comercial del material en sí** — venderlo, empaquetarlo en un
+producto de pago o publicarlo como propio.
+
+---
+
+## 2. Código — MIT
+
+Se aplica a: `skills/negociar/scripts/`, `.claude-plugin/`.
+
+Copyright (c) 2026 Artur Galiev
+
+Por la presente se concede permiso, libre de cargo, a cualquier persona que obtenga una copia
+de este software y de los archivos de documentación asociados (el "Software"), a utilizar el
+Software sin restricción, incluyendo sin limitación los derechos a usar, copiar, modificar,
+fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y a permitir a
+las personas a las que se les proporcione el Software a hacer lo mismo, sujeto a las
+siguientes condiciones:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o
+partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA,
+INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓSITO
+PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN
+RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCIÓN DE
+CONTRATO, AGRAVIO O CUALQUIER OTRO MOTIVO, DERIVADAS DE, FUERA DE O EN CONEXIÓN CON EL
+SOFTWARE O SU USO U OTRO TIPO DE ACCIONES EN EL SOFTWARE.
+
+---
+
+## 3. Descargo de responsabilidad
+
+Este proyecto ofrece **opinión y estrategia**, no asesoramiento legal, financiero, médico,
+psicológico ni profesional de ningún tipo. Las situaciones descritas por quien lo usa son
+siempre parciales, y las recomendaciones que produce dependen por completo de esa información.
+
+Las decisiones que tomes y sus consecuencias son exclusivamente tuyas. El autor no asume
+responsabilidad alguna por resultados derivados del uso de este material.
+
+Los casos de la biblioteca proceden de ejercicios de entrenamiento en clases en directo y se
+publican con fines educativos. Están **anonimizados**: los participantes aparecen como
+"Participante A", "Participante B"… dentro de cada caso, y las etiquetas se reasignan en cada
+caso, de modo que no es posible reconstruir el recorrido de ninguna persona a través del corpus.

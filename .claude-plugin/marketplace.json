@@ -1,0 +1,14 @@
+{
+  "name": "negociar-marketplace",
+  "owner": {
+    "name": "Artur Galiev"
+  },
+  "plugins": [
+    {
+      "name": "negociar",
+      "source": ".",
+      "description": "Asesor de lucha gerencial y negociación (Tarásov / Arti Galiev): canon + 1019 casos reales.",
+      "version": "1.0.8"
+    }
+  ]
+}

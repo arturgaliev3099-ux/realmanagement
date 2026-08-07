@@ -1,0 +1,18 @@
+{
+  "name": "negociar",
+  "version": "1.0.8",
+  "description": "Asesor de lucha gerencial y negociación (Tarásov / Arti Galiev). Piensa contra un canon de 275 principios y 1019 casos reales de clases en directo: reconstruye tu situación real, te confronta el punto ciego con tacto y traza la jugada paso a paso con las objeciones del otro y tu respuesta a cada una. Consultor de estrategia, no redactor. Español.",
+  "author": {
+    "name": "Artur Galiev"
+  },
+  "keywords": [
+    "negociacion",
+    "lucha-gerencial",
+    "tarasov",
+    "conflicto",
+    "persuasion",
+    "espanol"
+  ],
+  "license": "CC-BY-NC-SA-4.0 (content) / MIT (code)",
+  "homepage": "https://instagram.com/arti_galiev"
+}
