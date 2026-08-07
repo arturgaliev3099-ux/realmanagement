@@ -1,19 +1,46 @@
-# Lucha Gerencial: canon y skill de negociación
+# Real Management — negotiation and managerial combat
 
-> **v1.0.8 — estable.** Plugin de Claude Code. 275 principios · 1019 casos reales · español.
+> **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded fights · **answers in Spanish**
 
-Un asesor de **lucha gerencial** con el que hablas. Le cuentas tu lío en una frase —
-incompleta, en primera persona, contándote como el bueno— y te devuelve la situación real
-(incluido tu punto ciego), la ley que la gobierna y la jugada concreta, con el caso real que
-la respalda.
-
-No responde desde negociación de manual. Responde desde un canon destilado de **157 clases en
-directo** de [Arti Galiev](https://instagram.com/arti_galiev), en la tradición de tecnología
-social de Vladímir Tarásov.
+You describe a mess in one messy paragraph. It tells you what is actually happening — including the
+part you left out about yourself — and gives you the moves.
 
 ---
 
-## Empezar
+## What it looks like
+
+**You:**
+
+> A client owes me the final payment. Three months of chasing. I've explained everything, sent long
+> messages, told him my team hasn't been paid. He replies in five words and keeps stalling. Last week
+> I said we'd stop working. Two days later I backed down.
+
+**It answers:**
+
+> **You lost this on the day you backed down.** An ultimatum you don't execute is worse than no
+> ultimatum: he has now tested whether your words carry anything, and found out they don't. His
+> five-word replies aren't rudeness — they're the correct response to someone who has asked seven
+> times and never once made a "no" cost anything.
+>
+> **Your blind spot:** re-read your own messages. *"My team has been working for months and hasn't
+> been paid," "people are increasingly frustrated," "I kindly ask."* You believe you are making an
+> argument. You are asking for a favour. There is a law for this in the canon — *"I gave you time"*
+> means *"this is unfair"* means *"please pay me."* A valid argument names a concrete consequence
+> that happens whether he agrees or not.
+>
+> **What you have never used:** the documents are physically in your possession. He cannot close his
+> registration without them. Everything you've done so far is words; your actual leverage is objects.
+>
+> **The move — questions, not arguments.** You've spent all your arguments and they failed…
+
+Then comes the ladder of moves, what he will object at each step and your counter, the worst case
+prepared in advance, and the branches for everything you didn't mention.
+
+> Full worked example, start to finish: [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
+
+---
+
+## Install
 
 ```bash
 /plugin marketplace add arturgaliev3099-ux/realmanagement
@@ -23,166 +50,110 @@ social de Vladímir Tarásov.
 /plugin install negociar@negociar-marketplace
 ```
 
-Después, en cualquier sesión: `/negociar` y cuenta tu situación.
+Then `/negociar` in any session. Needs `node` on your PATH.
 
 <details>
-<summary>Instalación manual (sin el gestor de plugins)</summary>
+<summary>Manual install, without the plugin manager</summary>
 
 ```bash
 git clone https://github.com/arturgaliev3099-ux/realmanagement.git
 cp -r realmanagement/skills/negociar ~/.claude/skills/
 ```
 
-El skill necesita `node` en el PATH para el buscador de casos.
-
 </details>
 
 ---
 
-## Por qué esto no es "otro prompt de negociación"
+## Why it isn't another negotiation prompt
 
-**La unidad no es el acuerdo, es la lucha.** Aquí no se habla de *win-win* ni de *BATNA*. Se
-habla de agarre, derribo y fijación; de lo sólido y lo hueco; de quién impone su imagen del
-mundo; de los roles que cada uno ocupa sin darse cuenta.
+**The unit is not the deal, it's the fight.** No win-win, no BATNA. Grip, takedown and fixation;
+solid and hollow; whose picture of the world is running the room; the roles each side occupies
+without noticing.
 
-**No te da la razón.** Quien consulta se cuenta a sí mismo como el bueno y omite su propia
-parte. El skill reconstruye lo que pasó de verdad y te nombra tu punto ciego — suave en la
-forma, duro en el fondo.
+**It doesn't take your side.** Whoever asks casts themselves as the good guy and omits their own
+part. It reconstructs what actually happened and names your blind spot — soft in form, hard in
+substance.
 
-**Te da la jugada, no un consejo.** No "deberías ser más asertivo", sino el orden exacto de
-los movimientos, qué preguntar en cada paso y por qué, qué va a objetar el otro y qué
-respondes tú a cada objeción — incluido el peor escenario.
+**It gives the move, not advice.** Not "be more assertive," but the exact order of steps, what to
+ask at each one and why, what the other will object and what you answer.
 
-**Todo lo que dice está respaldado.** Cada jugada descansa en un principio del canon y, cuando
-ilumina, en un caso real de la biblioteca. Si el canon no cubre algo, lo dice en vez de
-rellenar con genérico.
-
----
-
-## Qué hay dentro
-
-### El canon — 275 principios en 10 dominios
-
-Cada principio trae su **ley** (el mecanismo), **cuándo aplica**, **cómo se ejecuta** paso a
-paso, y **ejemplos** reales.
-
-| Dominio | Principios | De qué trata |
-|---|---:|---|
-| Fundamentos de la lucha | 44 | Combate verbal, aceptar o deshacer un agarre, etiquetas de culpa, la fuerza de la indiferencia |
-| Imagen del mundo | 14 | Quién controla el relato, distancia informativa, datos contra opiniones, el derecho a la ignorancia |
-| Dinámica de roles | 26 | Escudo de rol, rol de víctima, rol de maestro, usurpación de autoridad |
-| Negociación posicional | 25 | Subidas de sueldo, el "no" del decisor, irreversibilidad de las concesiones, anclaje de precios |
-| Ventas complejas B2B | 24 | Persona contra rol, mapa de roles de compra, disconfort y dolor, preventa |
-| Autoridad y liderazgo | 34 | Distanciamiento, leales contra devotos, la regla del segundo grito, delegar |
-| Influencia y persuasión | 23 | Encuadre, persuasión contra manipulación, nemawashi, la conclusión inducida |
-| Conflicto y disciplina | 27 | Castigar sin perdonar, desescalar del pasado al futuro, gestionar la culpa, poner un límite |
-| Productividad y hábitos | 28 | Las seis verticales, planificación inversa, energía y dopamina, la regla del 40% |
-| Capital social | 30 | Construir capital social, comprobar lealtad, lazos débiles, conectores |
-
-### La biblioteca — 1019 casos reales
-
-Combates grabados en directo, con el diálogo completo y la retroalimentación de Arti sobre qué
-falló y qué habría sido más fuerte. No son ejemplos inventados: son personas reales peleando
-situaciones reales y equivocándose delante de todos.
-
-| Esfera | Casos | | Calidad | Casos |
-|---|---:|---|---|---:|
-| Laboral | 830 | | **A** — diálogo + enseñanza de Arti | 920 |
-| Social (vecinos, amigos, haters) | 79 | | **B** — escenario + diálogo | 96 |
-| Pareja | 72 | | **C** — fragmentario | 3 |
-| Familia | 38 | | | |
-
-El buscador prioriza automáticamente los casos de calidad A, porque ahí está la enseñanza.
+**It refuses to improvise.** Every move rests on a principle from the canon and, where it helps, on
+a recorded case. When the canon doesn't cover something, it says so instead of filling the gap with
+generic advice.
 
 ---
 
-## Cómo se ve una respuesta
+## What's inside
 
-En **un solo mensaje** recibes cuatro bloques:
+**The canon — 275 principles across 10 domains.** Each one carries its law (the mechanism), when it
+applies, how to execute it step by step, and real examples. Distilled from 1992 atomic principles
+extracted from 157 live classes (2.2M words), then consolidated and reconciled — a single entry can
+merge up to 50 separate mentions.
 
-1. **Te leo la situación real** — la lucha que hay de verdad debajo de lo que contaste, los
-   roles, dónde está tu fuerza y dónde tu hueco, el interés real del otro, y tu propio punto
-   ciego dicho con tacto.
-2. **Qué es esto en realidad** — el mecanismo y la ley que lo gobierna, explicada en palabras
-   de la calle antes de nombrarla.
-3. **La jugada** — la escalera de movimientos, cada peldaño con su porqué, lo que el otro va a
-   objetar y tu respuesta a cada objeción, más el peor escenario preparado.
-4. **Según lo que no me dijiste** — las bifurcaciones decisivas, cada una resuelta, para que la
-   respuesta te sirva aunque no contestes ninguna pregunta.
+| Domain | # | | Domain | # |
+|---|--:|---|---|--:|
+| Fundamentals of the fight | 44 | | Authority and leadership | 34 |
+| Social capital and alliances | 30 | | Productivity and habits | 28 |
+| Conflict and discipline | 27 | | Role dynamics | 26 |
+| Positional negotiation | 25 | | Complex B2B sales | 24 |
+| Influence and persuasion | 23 | | Picture of the world | 14 |
 
-Solo después, hasta tres preguntas de afinado — y únicamente las que cambiarían la
-recomendación.
+**The library — 1019 recorded fights.** Live sparring with the full dialogue and Arti's feedback on
+what failed and what would have been stronger. Not invented examples: real people fighting real
+situations and getting it wrong in front of everyone.
 
-> **Desglose completo de un caso real:** [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
-> — cómo se ve el skill trabajando de principio a fin, escrito para alguien que no sabe nada de
-> negociación.
+| Sphere | Cases | | Quality | Cases |
+|---|--:|---|---|--:|
+| Work | 830 | | **A** — dialogue + teaching | 920 |
+| Social (neighbours, friends, haters) | 79 | | **B** — scenario + dialogue | 96 |
+| Couple | 72 | | **C** — fragmentary | 3 |
+| Family | 38 | | | |
 
----
-
-## Qué hace el skill en tu máquina
-
-Transparencia, porque instalar un plugin es ejecutar código ajeno:
-
-- El skill ejecuta **un único script local**, [`buscar.mjs`](skills/negociar/scripts/buscar.mjs)
-  (132 líneas), que busca casos en `casos.json` por palabras clave.
-- Ese script **solo lee** sus propios ficheros de datos (`readFileSync`, `existsSync`,
-  `readdirSync`). No escribe nada, no ejecuta subprocesos, no abre conexiones de red.
-- **Nada sale de tu máquina** hacia ningún servidor de este proyecto. No hay telemetría, ni
-  analítica, ni llamadas a APIs externas.
-- Todo el canon y todos los casos viajan dentro del repositorio: el skill funciona sin
-  internet.
-
-El código son 132 líneas legibles de un tirón. Léelas antes de instalar si te importa — es lo
-correcto con cualquier plugin, incluido este.
+Participants are anonymised as *Participante A/B/C*, relabelled in every case, so nobody's path can
+be traced across the corpus.
 
 ---
 
-## Estructura del repositorio
+## What it does on your machine
 
-```
-.
-├── .claude-plugin/
-│   ├── plugin.json              # manifiesto del plugin
-│   └── marketplace.json         # manifiesto del marketplace
-└── skills/negociar/
-    ├── SKILL.md                 # las instrucciones del asesor
-    ├── EJEMPLO-NOVATO.md        # desglose completo de un caso real
-    ├── scripts/
-    │   └── buscar.mjs           # buscador determinista de casos
-    └── data/
-        ├── canon/               # 275 principios en 10 dominios
-        │   ├── 00-ARQUITECTURA.md
-        │   ├── 01-fundamentos-lucha…md
-        │   └── …
-        └── casos.json           # 1019 casos reales
-```
+Installing a plugin means running someone else's code, so:
+
+- One local script, [`buscar.mjs`](skills/negociar/scripts/buscar.mjs) — 132 lines — which searches
+  `casos.json` by keyword.
+- It **only reads** its own data files. No writes, no subprocesses, no network.
+- **Nothing leaves your machine.** No telemetry, no analytics, no external APIs. Works offline.
+
+132 lines you can read in one sitting. Read them before installing — that's the right habit with any
+plugin, this one included.
 
 ---
 
-## Sobre el autor
+## Author
 
 **Arti Galiev** — [instagram.com/arti_galiev](https://instagram.com/arti_galiev)
 
-El canon no se escribió de un tirón: se destiló de 157 clases en directo de lucha gerencial,
-donde los participantes traían sus propios líos —un jefe, un cliente que no paga, una
-acusación injusta, una pareja, un vecino— y los peleaban en vivo. Lo que quedó grabado es lo
-que se equivocaron y lo que se corrigió. De ahí salen los 275 principios y los 1019 casos.
+The canon wasn't written in one go. It was distilled from 157 live classes where participants brought
+their own messes — a boss, a client who won't pay, an unfair accusation, a partner, a neighbour — and
+fought them in real time. What got recorded is what they got wrong and how it was corrected.
 
-La tradición es la de **Vladímir Tarásov** y su tecnología social, que diverge de forma
-sustancial de la negociación anglosajona que domina los libros y los modelos de lenguaje.
+The tradition is **Vladimir Tarasov's** social technology, which diverges substantially from the
+Anglo-Saxon negotiation literature that dominates both the books and the language models.
 
 ---
 
-## Licencia y descargo
+## Language
 
-Publicado bajo [**CC BY-NC-SA 4.0**](LICENSE) — puedes usarlo, adaptarlo y compartirlo con
-atribución, para fines no comerciales, manteniendo la misma licencia.
+The canon, the cases and the answers are in **Spanish**. This README is in English so people can find
+it.
 
-Puedes aplicar la metodología en tu propio trabajo y en tu empresa sin límite. La licencia
-restringe únicamente la redistribución comercial del material.
+---
 
-**El código** (`scripts/`) se libera bajo MIT.
+## Licence
 
-**Descargo.** Este skill da opinión y estrategia, no asesoramiento legal, financiero,
-médico ni psicológico. Las decisiones y sus consecuencias son tuyas. Se entrega TAL CUAL, sin
-garantía de ningún tipo.
+Content under [**CC BY-NC-SA 4.0**](LICENSE), code under **MIT**.
+
+You may apply the methodology in your own work and your own company without limit — the
+non-commercial clause restricts only commercial redistribution of the material itself.
+
+**Disclaimer.** This gives opinion and strategy, not legal, financial, medical or psychological
+advice. Your decisions and their consequences are yours. Provided as is, without warranty.
