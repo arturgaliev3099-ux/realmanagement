@@ -171,12 +171,12 @@ be traced across the corpus.
 
 Installing a plugin means running someone else's code, so:
 
-- One local script, [`buscar.mjs`](skills/negociar/scripts/buscar.mjs) — 132 lines — which searches
+- One local script, [`buscar.mjs`](skills/negociar/scripts/buscar.mjs) — 133 lines — which searches
   `casos.json` by keyword.
 - It **only reads** its own data files. No writes, no subprocesses, no network.
 - **Nothing leaves your machine.** No telemetry, no analytics, no external APIs. Works offline.
 
-132 lines you can read in one sitting. Read them before installing — that's the right habit with any
+133 lines you can read in one sitting. Read them before installing — that's the right habit with any
 plugin, this one included.
 
 ---
