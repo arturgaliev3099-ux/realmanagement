@@ -12,15 +12,33 @@ If private reporting is unavailable, write to the author on
 
 Installing a plugin means running someone else's code. Here is the whole surface:
 
-- **One script**, [`skills/negociar/scripts/buscar.mjs`](skills/negociar/scripts/buscar.mjs), 133
-  lines of plain Node. It searches `casos.json` by keyword and prints matches.
+**At runtime — one script.** [`skills/negociar/scripts/buscar.mjs`](skills/negociar/scripts/buscar.mjs),
+133 lines of plain Node. It searches `casos.json` by keyword and prints matches.
+
 - **Reads only** — `readFileSync`, `existsSync`, `readdirSync`, all against files inside the plugin
   directory. It writes nothing, spawns no subprocess, opens no socket.
-- **No network.** No telemetry, no analytics, no external API. It works with the machine offline.
-- **No dependencies.** There is no `package.json` and nothing is installed from npm.
 - The rest of the plugin is Markdown and one JSON data file.
 
-You can verify all of this by reading the script in one sitting. Please do — that is the right habit
+**At install time — only if you run the installer.** [`install.sh`](install.sh) and
+[`install.ps1`](install.ps1) are optional; the Claude Code plugin manager does not use them. If you
+do run one:
+
+- It writes **only** inside the install directories it reports before starting —
+  `~/.claude/skills/negociar/` and `~/.codex/skills/negociar/`, or the `.claude/` and `.agents/`
+  equivalents under a `--target` project. It replaces that one folder and touches no other skill.
+- It runs [`scripts/postinstall.mjs`](scripts/postinstall.mjs), which edits `SKILL.md` **inside the
+  copy it just made** — rewriting the plugin-root placeholder to an absolute path and, for Codex,
+  shortening the description. Nothing outside the install directory is modified.
+- **The one-liner (`curl … | bash`, `irm … | iex`) clones this repo** over HTTPS into a temp folder
+  and deletes it afterwards. That is the only network access anywhere in this project. Installing
+  from a clone you already have makes no network call at all. If piping a remote script into a shell
+  isn't a habit you want, clone the repo, read `install.sh`, and run it locally.
+
+**No network at runtime.** No telemetry, no analytics, no external API. The skill itself works with
+the machine offline. **No dependencies** — there is no `package.json` and nothing is installed from
+npm.
+
+You can verify all of this by reading the scripts in one sitting. Please do — that is the right habit
 with any plugin, this one included.
 
 ## Integrity of what you install

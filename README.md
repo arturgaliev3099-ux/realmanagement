@@ -1,6 +1,6 @@
 # Real Management — communication, people management, sales and negotiation
 
-> **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded negotiations · **answers in Spanish**
+> **v1.0.8** · Claude Code + Codex · 275 canon principles · 1019 recorded negotiations · **answers in Spanish**
 
 You give it everything you have on the situation — the actual messages, the history, the numbers,
 what you already said out loud. It works out what is really going on, including the parts that are
@@ -97,6 +97,11 @@ can't actually execute.
 
 ## Install
 
+Works in **Claude Code** and **Codex**. Every route needs `node` on your PATH — that's what searches
+the 1019 cases.
+
+### Claude Code — plugin manager
+
 ```bash
 /plugin marketplace add arturgaliev3099-ux/realmanagement
 ```
@@ -105,15 +110,45 @@ can't actually execute.
 /plugin install negociar@negociar-marketplace
 ```
 
-Then `/negociar` in any session. Needs `node` on your PATH.
+### Either agent — installer
 
-<details>
-<summary>Manual install, without the plugin manager</summary>
+Installs the same skill into both agents. It defaults to a **user-level** install, because this skill
+is about your boss and your partner, not about one repository — you want it in every session.
+
+macOS / Linux:
 
 ```bash
-git clone https://github.com/arturgaliev3099-ux/realmanagement.git
-cp -r realmanagement/skills/negociar ~/.claude/skills/
+curl -fsSL https://raw.githubusercontent.com/arturgaliev3099-ux/realmanagement/main/install.sh | bash
 ```
+
+Windows (PowerShell):
+
+```powershell
+irm https://raw.githubusercontent.com/arturgaliev3099-ux/realmanagement/main/install.ps1 | iex
+```
+
+| | Claude Code | Codex |
+|---|---|---|
+| user install *(default)* | `~/.claude/skills/negociar/` | `~/.codex/skills/negociar/` |
+| project install *(`--target DIR`)* | `DIR/.claude/skills/negociar/` | `DIR/.agents/skills/negociar/` |
+
+Then **`/negociar`** in Claude Code, **`$negociar`** in Codex. Restart the agent so it picks the skill up.
+
+Flags: `--target DIR`, `--claude-only`, `--codex-only` — in PowerShell `-Target`, `-ClaudeOnly`,
+`-CodexOnly`. Re-running is idempotent: it replaces the `negociar` folder in place and leaves every
+other skill you have installed untouched.
+
+<details>
+<summary>What the installer changes in the copy it installs</summary>
+
+The skill's own paths are written as `${CLAUDE_PLUGIN_ROOT}/skills/negociar/…`. That variable only
+exists when Claude Code loads the plugin through the marketplace — under Codex, or in a hand-copied
+install, it is undefined and the skill would never find its canon or its cases.
+
+So [`scripts/postinstall.mjs`](scripts/postinstall.mjs) rewrites that prefix to the absolute install
+path in the installed copy, and swaps in a shorter `description` for Codex, which truncates skill
+descriptions at 1024 characters. The source file in this repo is left untouched — there is one
+`SKILL.md` to maintain, not two.
 
 </details>
 
@@ -173,13 +208,18 @@ be traced across the corpus.
 
 Installing a plugin means running someone else's code, so:
 
-- One local script, [`buscar.mjs`](skills/negociar/scripts/buscar.mjs) — 133 lines — which searches
-  `casos.json` by keyword.
-- It **only reads** its own data files. No writes, no subprocesses, no network.
+- **At runtime, one script:** [`buscar.mjs`](skills/negociar/scripts/buscar.mjs) — 133 lines — which
+  searches `casos.json` by keyword. It **only reads** its own data files. No writes, no subprocesses,
+  no network.
+- **At install time, if you use the installer:** [`install.sh`](install.sh) / [`install.ps1`](install.ps1)
+  copy `skills/negociar/` into the locations listed above and run
+  [`postinstall.mjs`](scripts/postinstall.mjs), which rewrites paths inside the copy it just made.
+  They write only under those install directories, and clone this repo to a temp folder if you ran
+  the one-liner. Nothing else on your disk is touched.
 - **Nothing leaves your machine.** No telemetry, no analytics, no external APIs. Works offline.
 
-133 lines you can read in one sitting. Read them before installing — that's the right habit with any
-plugin, this one included.
+All of it is a few hundred lines you can read in one sitting. Read them before installing — that's
+the right habit with any plugin, this one included.
 
 ---
 
