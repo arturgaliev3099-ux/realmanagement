@@ -1,4 +1,4 @@
-# Real Management — negotiation and managerial combat
+# Real Management — communication, people management, sales and negotiation
 
 > **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded negotiations · **answers in Spanish**
 
@@ -119,9 +119,9 @@ cp -r realmanagement/skills/negociar ~/.claude/skills/
 
 ## Why it isn't another negotiation prompt
 
-**The unit is not the deal, it's the fight.** No win-win, no BATNA. Grip, takedown and fixation;
-solid and hollow; whose picture of the world is running the room; the roles each side occupies
-without noticing.
+**The unit is not the agreement, it's what is actually happening between the people.** No win-win,
+no BATNA. Whose picture of the world is running the room; what is solid and what is hollow; the
+roles each side has taken without noticing; and how a position is won or lost move by move.
 
 **It doesn't take your side.** Whoever asks casts themselves as the good guy and omits their own
 part. It reconstructs what actually happened and names your blind spot — soft in form, hard in

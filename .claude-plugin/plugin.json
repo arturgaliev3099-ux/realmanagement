@@ -1,16 +1,18 @@
 {
   "name": "negociar",
   "version": "1.0.8",
-  "description": "Asesor de lucha gerencial y negociación (Tarásov / Arti Galiev). Piensa contra un canon de 275 principios y 1019 casos reales de clases en directo: reconstruye tu situación real, te confronta el punto ciego con tacto y traza la jugada paso a paso con las objeciones del otro y tu respuesta a cada una. Consultor de estrategia, no redactor. Español.",
+  "description": "Advisor on communication, people management, sales and negotiation (Tarásov / Arti Galiev). Thinks against a canon of 275 principles and 1019 recorded negotiations from live classes: reconstructs what is really going on, names your blind spot with tact, and lays out the moves step by step with the other side's objections and your answer to each. A strategy consultant, not a copywriter. Answers in Spanish.",
   "author": {
     "name": "Artur Galiev"
   },
   "keywords": [
-    "negociacion",
-    "lucha-gerencial",
+    "communication",
+    "people-management",
+    "negotiation",
+    "sales",
+    "conflict-resolution",
     "tarasov",
-    "conflicto",
-    "persuasion",
+    "claude-code",
     "espanol"
   ],
   "license": "CC-BY-NC-SA-4.0 (content) / MIT (code)",
