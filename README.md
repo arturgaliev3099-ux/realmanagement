@@ -3,8 +3,8 @@
 > **v1.0.8** · Claude Code plugin · 275 canon principles · 1019 recorded negotiations · **answers in Spanish**
 
 You give it everything you have on the situation — the actual messages, the history, the numbers,
-what you already said out loud. It tells you what is really happening, including the part you left
-out about yourself, and gives you the moves.
+what you already said out loud. It works out what is really going on, including the parts that are
+hard to see from inside it, and shows you how to move.
 
 **It is only as good as what you feed it.** A two-line summary gets you a two-line-summary answer.
 See [Getting a real answer out of it](#getting-a-real-answer-out-of-it) below — that section matters
@@ -14,7 +14,7 @@ more than anything else in this README.
 
 ## What it looks like
 
-**You** — dumping the whole thing, not summarising it:
+**You** — giving it the whole thing, not a summary:
 
 > Client owes me the final payment on a document job. Started in April, was supposed to be two weeks,
 > it's been three months. Here's the whole Telegram thread, screenshots attached. Short version: on
@@ -27,27 +27,29 @@ more than anything else in this README.
 
 **It answers:**
 
-> **You lost this on the day you backed down.** An ultimatum you don't execute is worse than no
-> ultimatum: he has now tested whether your words carry anything, and found out they don't. His
-> five-word replies aren't rudeness — they're the correct response to someone who has asked seven
-> times and never once made a "no" cost anything.
+> **The turning point was the day the ultimatum came back.** A deadline that isn't kept costs more
+> than never setting one: it answers, for him, the question of whether your words carry weight. His
+> five-word replies aren't rudeness — they're a rational response to seven requests where saying no
+> never cost him anything.
 >
-> **Your blind spot:** re-read your own messages. *"My team has been working for months and hasn't
-> been paid," "people are increasingly frustrated," "I kindly ask."* You believe you are making an
-> argument. You are asking for a favour. There is a law for this in the canon — *"I gave you time"*
-> means *"this is unfair"* means *"please pay me."* A valid argument names a concrete consequence
-> that happens whether he agrees or not.
+> **What's easy to miss from inside:** look again at your own messages. *"My team has been working
+> for months and hasn't been paid," "people are increasingly frustrated," "I kindly ask."* From
+> where you stand these are arguments. From where he stands they read as a request for a favour —
+> the canon is blunt about this: *"I gave you time"* means *"this is unfair"* means *"please pay
+> me."* What carries weight instead is a concrete consequence that follows whether he agrees or not.
 >
-> **What you have never used:** the documents are physically in your possession. He cannot close his
-> registration without them. Everything you've done so far is words; your actual leverage is objects.
+> **What hasn't been used yet:** the documents are physically in your possession. He cannot close
+> his registration without them. Everything so far has been words; the leverage that exists is an
+> object on your desk.
 >
-> **The move — questions, not arguments.** You've spent all your arguments and they failed…
+> **The move — questions rather than arguments.** The arguments are spent; questions are what's
+> left, and they work differently…
 
 Then comes the ladder of moves, what he will object at each step and your counter, the worst case
 prepared in advance, and the branches for everything you didn't mention.
 
-Notice what the answer used: the exact date of the *"perfect, let's do that,"* the wording of his
-five-word replies, the fact that the ultimatum was withdrawn two days later, who the nominee belongs
+Notice what the answer leaned on: the exact date of the *"perfect, let's do that,"* the wording of
+his five-word replies, the two days between the deadline and its withdrawal, who the nominee belongs
 to. **None of that survives a summary.** Had the input been *"a client owes me money and won't pay,"*
 the answer would have been a lecture on collecting debts.
 
@@ -123,9 +125,9 @@ cp -r realmanagement/skills/negociar ~/.claude/skills/
 no BATNA. Whose picture of the world is running the room; what is solid and what is hollow; the
 roles each side has taken without noticing; and how a position is won or lost move by move.
 
-**It doesn't take your side.** Whoever asks casts themselves as the good guy and omits their own
-part. It reconstructs what actually happened and names your blind spot — soft in form, hard in
-substance.
+**It doesn't simply agree with you.** Everyone tells their own story from inside it, and what you
+can't see from there is exactly what matters. It reconstructs what actually happened and shows you
+those parts — gentle in form, honest in substance.
 
 **It gives the move, not advice.** Not "be more assertive," but the exact order of steps, what to
 ask at each one and why, what the other will object and what you answer.
