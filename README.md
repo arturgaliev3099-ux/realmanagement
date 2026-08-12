@@ -1,20 +1,24 @@
-# Real Management — communication, people management, sales and negotiation
+# Real Management
 
-> **v1.0.8** · Claude Code + Codex · 275 canon principles · 1019 recorded negotiations · **answers in Spanish**
+> **v1.0.8** · Claude Code + Codex · 275 principles · 1019 recorded negotiations · **answers in Spanish**
 
-You give it everything you have on the situation — the actual messages, the history, the numbers,
-what you already said out loud. It works out what is really going on, including the parts that are
-hard to see from inside it, and shows you how to move.
+You are the least reliable narrator of your own conflict. Everyone is. You tell it from the inside,
+cast as the reasonable one, and the part that decides the whole thing is the part you can't see from
+where you're standing.
 
-**It is only as good as what you feed it.** A two-line summary gets you a two-line-summary answer.
-See [Getting a real answer out of it](#getting-a-real-answer-out-of-it) below — that section matters
-more than anything else in this README.
+Paste in the raw material — the thread, the dates, the amounts, what you already said out loud — and
+this reconstructs what is actually going on, shows you the piece you're missing, and gives you the
+move.
+
+It answers from a canon of 275 principles and 1019 recorded negotiations. Not from what a language
+model absorbed about negotiation somewhere along the way. Those are different things, and the
+difference shows up in the first paragraph.
 
 ---
 
-## What it looks like
+## See it work
 
-**You** — giving it the whole thing, not a summary:
+**You** — handing over the whole thing, not a summary:
 
 > Client owes me the final payment on a document job. Started in April, was supposed to be two weeks,
 > it's been three months. Here's the whole Telegram thread, screenshots attached. Short version: on
@@ -45,53 +49,51 @@ more than anything else in this README.
 > **The move — questions rather than arguments.** The arguments are spent; questions are what's
 > left, and they work differently…
 
-Then comes the ladder of moves, what he will object at each step and your counter, the worst case
-prepared in advance, and the branches for everything you didn't mention.
+Then the ladder of moves, what he objects at each step and your counter, the worst case prepared
+before it arrives, and the branches for everything you didn't mention.
 
-Notice what the answer leaned on: the exact date of the *"perfect, let's do that,"* the wording of
-his five-word replies, the two days between the deadline and its withdrawal, who the nominee belongs
-to. **None of that survives a summary.** Had the input been *"a client owes me money and won't pay,"*
-the answer would have been a lecture on collecting debts.
+Now look at what that answer stood on. The exact date of the *"perfect, let's do that."* The length
+of his replies. The two days between the deadline and its withdrawal. Who the nominee belongs to.
 
-> Full worked example, start to finish: [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
+None of it survives a summary. Feed it *"a client owes me money and won't pay"* and you get a lecture
+on collecting debts — which you could have written yourself.
+
+> The full worked example, start to finish: [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
 
 ---
 
-## Getting a real answer out of it
+## It is only as good as what you feed it
 
-This is not a prompt that rewards brevity. The diagnosis is reconstruction: it works out what
-actually happened from the raw material, and it can only work with material you give it.
+This section matters more than anything else in this README. The diagnosis is reconstruction — it
+works out what happened from the raw material, so it can only be as good as the material.
 
-**Paste the raw thing, don't retell it.** The actual messages, the thread, the email, the screenshot.
-Their exact words matter more than your description of their tone — half the diagnosis comes from how
-short their replies are and which of your arguments they ignored.
+**Paste the thing, don't retell it.** The actual messages, the thread, the email, the screenshot.
+Their exact words beat your description of their tone. Half the diagnosis comes from how short their
+replies got and which of your arguments they walked past.
 
-**Say what already happened out loud.** What you've said in person or on a call, what you already
-apologised for, what's already been agreed. Otherwise it will hand you a message repeating things the
-other person has heard ten times — the single most common way its answers go wrong.
+**Say what was already said out loud.** In person, on the call, the apology you already made, what's
+already agreed. Skip this and it hands you a message repeating things the other person has heard ten
+times — the single most common way its answers go wrong.
 
-**Give the timeline and the numbers.** When it started, when each thing was said, how long the
-silences were, the amounts, the deadlines. Timing changes the play completely: a reply in the heat of
-the moment is a different situation from one that has gone cold, where your silence has already
-become a "yes."
+**Give the timeline and the numbers.** Dates, silences, amounts, deadlines. A reply in the heat of it
+is a different situation from one gone cold, where your silence has already been read as a yes.
 
-**Say who these people really are to each other.** Who depends on whom, who can walk away, who has
+**Say who these people really are to each other.** Who depends on whom, who can walk, who has
 alternatives, what each side actually stands to lose. The side that looks weak in your telling is
-often the one holding the leverage.
+usually the one holding the leverage.
 
-**Say what you actually want** — the money, an apology, to close it quietly, to keep the relationship,
-to never deal with them again. And what you're afraid of. Different goals produce genuinely different
-moves from the same facts.
+**Say what you actually want** — the money, an apology, to close it quietly, to keep the
+relationship, to never see them again. And what you're afraid of. Same facts, different goal,
+genuinely different move.
 
-**Answer its questions.** It resolves the branches it can and then asks up to three questions — only
-the ones that would flip the recommendation. Those are the expensive gaps. Answering them is cheap.
+**Answer its questions.** It resolves what it can, then asks up to three — only the ones that would
+flip the recommendation. Those are the expensive gaps and they're cheap to close.
 
-**Push back when it's wrong.** If it misread the situation, say so with the missing fact. It
-re-diagnoses instead of defending its previous answer.
+**Tell it your constraints.** *"No apology in writing." "This has to be a phone call." "I can't
+threaten legal action."* Without them you get a move you can't actually execute.
 
-**Tell it the constraints.** *"Don't put an apology in writing," "this has to be a phone call,"
-"I can't threaten legal action."* Constraints shape the play; without them you'll get a move you
-can't actually execute.
+**Push back when it's wrong.** Give it the missing fact. It re-diagnoses instead of defending its
+last answer.
 
 ---
 
@@ -112,8 +114,8 @@ the 1019 cases.
 
 ### Either agent — installer
 
-Installs the same skill into both agents. It defaults to a **user-level** install, because this skill
-is about your boss and your partner, not about one repository — you want it in every session.
+Same source, both agents. Defaults to a **user-level** install, because this is about your boss and
+your partner, not about one repository — you want it in every session.
 
 macOS / Linux:
 
@@ -132,53 +134,54 @@ irm https://raw.githubusercontent.com/arturgaliev3099-ux/realmanagement/main/ins
 | user install *(default)* | `~/.claude/skills/negociar/` | `~/.codex/skills/negociar/` |
 | project install *(`--target DIR`)* | `DIR/.claude/skills/negociar/` | `DIR/.agents/skills/negociar/` |
 
-Then **`/negociar`** in Claude Code, **`$negociar`** in Codex. Restart the agent so it picks the skill up.
+Then **`/negociar`** in Claude Code, **`$negociar`** in Codex. Restart the agent so it picks the
+skill up.
 
 Flags: `--target DIR`, `--claude-only`, `--codex-only` — in PowerShell `-Target`, `-ClaudeOnly`,
 `-CodexOnly`. Re-running is idempotent: it replaces the `negociar` folder in place and leaves every
-other skill you have installed untouched.
+other skill you have installed alone.
 
 <details>
 <summary>What the installer changes in the copy it installs</summary>
 
-The skill's own paths are written as `${CLAUDE_PLUGIN_ROOT}/skills/negociar/…`. That variable only
-exists when Claude Code loads the plugin through the marketplace — under Codex, or in a hand-copied
-install, it is undefined and the skill would never find its canon or its cases.
+The skill's paths are written as `${CLAUDE_PLUGIN_ROOT}/skills/negociar/…`. That variable only exists
+when Claude Code loads the plugin through the marketplace — under Codex, or in a hand-copied install,
+it's undefined and the skill never finds its canon or its cases.
 
 So [`scripts/postinstall.mjs`](scripts/postinstall.mjs) rewrites that prefix to the absolute install
-path in the installed copy, and swaps in a shorter `description` for Codex, which truncates skill
-descriptions at 1024 characters. The source file in this repo is left untouched — there is one
-`SKILL.md` to maintain, not two.
+path in the copy it just made, and swaps in a shorter `description` for Codex, which truncates skill
+descriptions at 1024 characters. The source file here is left untouched — one `SKILL.md` to maintain,
+not two.
 
 </details>
 
 ---
 
-## Why it isn't another negotiation prompt
+## Why this isn't another negotiation prompt
 
-**The unit is not the agreement, it's what is actually happening between the people.** No win-win,
-no BATNA. Whose picture of the world is running the room; what is solid and what is hollow; the
-roles each side has taken without noticing; and how a position is won or lost move by move.
+**The unit isn't the agreement. It's what is actually happening between the people.** No win-win, no
+BATNA. Whose picture of the world is running the room. What is solid and what is hollow. The roles
+each side took without noticing. How a position is won or lost move by move.
 
-**It doesn't simply agree with you.** Everyone tells their own story from inside it, and what you
-can't see from there is exactly what matters. It reconstructs what actually happened and shows you
-those parts — gentle in form, honest in substance.
+**It doesn't take your side.** You told the story from inside it, and inside it is exactly where the
+decisive part is invisible. It reconstructs what happened and hands you your own blind spot — gentle
+in form, honest in substance. Read once, it can sting. That's the useful part.
 
-**It gives the move, not advice.** Not "be more assertive," but the exact order of steps, what to
-ask at each one and why, what the other will object and what you answer.
+**It gives the move, not advice.** Not "be more assertive." The order of the steps, what to ask at
+each one and why, what the other will object, and what you say back.
 
-**It refuses to improvise.** Every move rests on a principle from the canon and, where it helps, on
-a recorded case. When the canon doesn't cover something, it says so instead of filling the gap with
-generic advice.
+**It refuses to improvise.** Every move rests on a principle from the canon and, where it helps, on a
+recorded case. Where the canon is silent, it says so instead of filling the hole with something
+plausible.
 
 ---
 
 ## What's inside
 
 **The canon — 275 principles across 10 domains.** Each one carries its law (the mechanism), when it
-applies, how to execute it step by step, and real examples. Distilled from 1992 atomic principles
-extracted from 157 live classes (2.2M words), then consolidated and reconciled — a single entry can
-merge up to 50 separate mentions.
+applies, how to run it step by step, and real examples. Distilled from 1992 atomic principles pulled
+out of 157 live classes — 2.2M words — then consolidated and reconciled. A single entry can merge up
+to 50 separate mentions.
 
 | Domain | # | | Domain | # |
 |---|--:|---|---|--:|
@@ -190,7 +193,7 @@ merge up to 50 separate mentions.
 
 **The library — 1019 recorded negotiations.** Live, with the full dialogue and Arti's feedback on
 what failed and what would have been stronger. Not invented examples: real people negotiating real
-situations and getting it wrong in front of everyone.
+situations and getting it wrong in front of a room.
 
 | Sphere | Cases | | Quality | Cases |
 |---|--:|---|---|--:|
@@ -199,27 +202,27 @@ situations and getting it wrong in front of everyone.
 | Couple | 72 | | **C** — fragmentary | 3 |
 | Family | 38 | | | |
 
-Participants are anonymised as *Participante A/B/C*, relabelled in every case, so nobody's path can
-be traced across the corpus.
+Participants appear as *Participante A/B/C*, relabelled independently in every case, so nobody's path
+can be traced across the corpus.
 
 ---
 
 ## What it does on your machine
 
-Installing a plugin means running someone else's code, so:
+Installing a plugin is running a stranger's code. So, the whole surface:
 
 - **At runtime, one script:** [`buscar.mjs`](skills/negociar/scripts/buscar.mjs) — 133 lines — which
   searches `casos.json` by keyword. It **only reads** its own data files. No writes, no subprocesses,
-  no network.
-- **At install time, if you use the installer:** [`install.sh`](install.sh) / [`install.ps1`](install.ps1)
-  copy `skills/negociar/` into the locations listed above and run
-  [`postinstall.mjs`](scripts/postinstall.mjs), which rewrites paths inside the copy it just made.
-  They write only under those install directories, and clone this repo to a temp folder if you ran
-  the one-liner. Nothing else on your disk is touched.
-- **Nothing leaves your machine.** No telemetry, no analytics, no external APIs. Works offline.
+  no sockets.
+- **At install time, only if you use the installer:** [`install.sh`](install.sh) /
+  [`install.ps1`](install.ps1) copy `skills/negociar/` into the directories listed above and run
+  [`postinstall.mjs`](scripts/postinstall.mjs), which rewrites paths inside that copy. They write
+  nowhere else, and the one-liner clones this repo to a temp folder and deletes it after.
+- **Nothing leaves your machine.** No telemetry, no analytics, no external APIs. Works offline. No
+  `package.json`, nothing from npm.
 
-All of it is a few hundred lines you can read in one sitting. Read them before installing — that's
-the right habit with any plugin, this one included.
+A few hundred lines you can read in one sitting. Read them before you install — that's the right
+habit with any plugin, this one included.
 
 ---
 
@@ -227,12 +230,12 @@ the right habit with any plugin, this one included.
 
 **Arti Galiev** — [instagram.com/arti_galiev](https://instagram.com/arti_galiev)
 
-The canon wasn't written in one go. It was distilled from 157 live classes where participants brought
-their own messes — a boss, a client who won't pay, an unfair accusation, a partner, a neighbour — and
-fought them in real time. What got recorded is what they got wrong and how it was corrected.
+The canon wasn't written. It was extracted. 157 live classes where people brought their own messes —
+a boss, a client who won't pay, an unfair accusation, a partner, a neighbour — and fought them in
+real time, in front of everyone. What got recorded is what they got wrong and how it was corrected.
 
-The tradition is **Vladimir Tarasov's** social technology, which diverges substantially from the
-Anglo-Saxon negotiation literature that dominates both the books and the language models.
+The tradition is **Vladimir Tarasov's** social technology, which diverges hard from the Anglo-Saxon
+negotiation literature that dominates both the bookshelf and the language models.
 
 ---
 
@@ -247,8 +250,8 @@ it.
 
 Content under [**CC BY-NC-SA 4.0**](LICENSE), code under **MIT**.
 
-You may apply the methodology in your own work and your own company without limit — the
-non-commercial clause restricts only commercial redistribution of the material itself.
+Apply the methodology in your own work and your own company without limit — the non-commercial clause
+restricts only commercial redistribution of the material itself.
 
 **Disclaimer.** This gives opinion and strategy, not legal, financial, medical or psychological
 advice. Your decisions and their consequences are yours. Provided as is, without warranty.
