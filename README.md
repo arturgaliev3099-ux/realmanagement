@@ -2,63 +2,20 @@
 
 > **v1.0.8** · Claude Code + Codex · 275 principles · 1019 recorded negotiations · **answers in Spanish**
 
-You are the least reliable narrator of your own conflict. Everyone is. You tell it from the inside,
-cast as the reasonable one, and the part that decides the whole thing is the part you can't see from
-where you're standing.
+Paste in the whole thing — the thread, the dates, the amounts, what you already said out loud — and
+get back the move. Not "be more assertive": the order of the steps, what to say at each one, what
+the other side will object, and your answer to it.
 
-Paste in the raw material — the thread, the dates, the amounts, what you already said out loud — and
-this reconstructs what is actually going on, shows you the piece you're missing, and gives you the
-move.
+Work and life both. A client who won't pay, a boss, a raise, an unfair accusation, a deal that won't
+close — and a partner, a family member, a neighbour, a landlord, a hater.
 
-It answers from a canon of 275 principles and 1019 recorded negotiations. Not from what a language
-model absorbed about negotiation somewhere along the way. Those are different things, and the
-difference shows up in the first paragraph.
+It runs on a canon of 275 principles and 1019 recorded negotiations — real ones, full dialogue,
+including what the person got wrong and what would have worked better. Not on what a language model
+picked up about negotiation along the way. That difference shows up in the first paragraph.
 
----
-
-## See it work
-
-**You** — handing over the whole thing, not a summary:
-
-> Client owes me the final payment on a document job. Started in April, was supposed to be two weeks,
-> it's been three months. Here's the whole Telegram thread, screenshots attached. Short version: on
-> 24 July I proposed we send scans + originals + tracking, then he pays in full — he replied
-> *"perfect, let's do that."* On the 29th he threatened to demand a refund. On the 30th he paid €533
-> for notary costs. On 1 August I sent a long message saying if he won't honour the 24 July terms we
-> stop. On the 3rd I wrote that we'd finish the whole process anyway. He replied with a thumbs up.
-> Since then, silence. I still hold the notarised originals and the apostille. The nominee director
-> on his German entity is our person. My remaining balance is ~€2,400.
-
-**It answers:**
-
-> **The turning point was the day the ultimatum came back.** A deadline that isn't kept costs more
-> than never setting one: it answers, for him, the question of whether your words carry weight. His
-> five-word replies aren't rudeness — they're a rational response to seven requests where saying no
-> never cost him anything.
->
-> **What's easy to miss from inside:** look again at your own messages. *"My team has been working
-> for months and hasn't been paid," "people are increasingly frustrated," "I kindly ask."* From
-> where you stand these are arguments. From where he stands they read as a request for a favour —
-> the canon is blunt about this: *"I gave you time"* means *"this is unfair"* means *"please pay
-> me."* What carries weight instead is a concrete consequence that follows whether he agrees or not.
->
-> **What hasn't been used yet:** the documents are physically in your possession. He cannot close
-> his registration without them. Everything so far has been words; the leverage that exists is an
-> object on your desk.
->
-> **The move — questions rather than arguments.** The arguments are spent; questions are what's
-> left, and they work differently…
-
-Then the ladder of moves, what he objects at each step and your counter, the worst case prepared
-before it arrives, and the branches for everything you didn't mention.
-
-Now look at what that answer stood on. The exact date of the *"perfect, let's do that."* The length
-of his replies. The two days between the deadline and its withdrawal. Who the nominee belongs to.
-
-None of it survives a summary. Feed it *"a client owes me money and won't pay"* and you get a lecture
-on collecting debts — which you could have written yourself.
-
-> The full worked example, start to finish: [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
+> **A full worked answer, start to finish** — €5,000 owed on a referral for a €1.3M flat, by a friend
+> who now wants to settle for €1,000: [`EJEMPLO-NOVATO.md`](skills/negociar/EJEMPLO-NOVATO.md)
+> *(written in Russian)*
 
 ---
 
@@ -163,9 +120,9 @@ not two.
 BATNA. Whose picture of the world is running the room. What is solid and what is hollow. The roles
 each side took without noticing. How a position is won or lost move by move.
 
-**It doesn't take your side.** You told the story from inside it, and inside it is exactly where the
-decisive part is invisible. It reconstructs what happened and hands you your own blind spot — gentle
-in form, honest in substance. Read once, it can sting. That's the useful part.
+**It tells you how your moves are actually landing.** You wrote those messages knowing what you
+meant by them. It reads them the way the other side read them — which is where most of the useful
+information is, and the one thing you can't get at from inside the situation.
 
 **It gives the move, not advice.** Not "be more assertive." The order of the steps, what to ask at
 each one and why, what the other will object, and what you say back.
