@@ -1,4 +1,4 @@
-#requires -Version 5.1
+﻿#requires -Version 5.1
 <#
 .SYNOPSIS
   negociar — instalador para Claude Code y Codex (Windows / PowerShell).
