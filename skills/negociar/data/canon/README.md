@@ -35,6 +35,10 @@ canon + la **biblioteca de casos** (`casos.json`, 1019 casos reales curados: lab
 pareja/familia/vida social/haters, con dominio · tier de calidad · esfera). El skill nunca responde
 desde conocimiento genérico: cita el principio y el caso que respaldan cada jugada.
 
+De las 157 clases procesadas, 144 aportaron al menos un caso a la biblioteca; las 13 restantes no
+dejaron ningún caso catalogable en la curación. Por eso los textos hablan de «157 clases» (lo
+procesado) y `casos.json` contiene 144 identificadores de clase.
+
 ## Cómo se usa este canon
 
 Es la base de conocimiento que alimenta el **skill de negociación** (y futuros skills).

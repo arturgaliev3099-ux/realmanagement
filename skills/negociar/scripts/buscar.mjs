@@ -83,9 +83,14 @@ let sphereFilter = null;
 const spIx = argv.indexOf("--sphere");
 if (spIx !== -1) sphereFilter = (argv[spIx + 1] || "").toLowerCase();
 
+// Normaliza a minúsculas y quita diacríticos, para que "negociacion" y
+// "negociación" recuperen el mismo caso: los términos los teclea el modelo
+// derivándolos del relato, y no siempre trae las tildes. (H2)
+const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
 const terms = argv
   .filter((a, i) => !a.startsWith("--") && !FLAGS.includes(argv[i - 1]))
-  .flatMap((a) => a.toLowerCase().split(/\s+/))
+  .flatMap((a) => norm(a).split(/\s+/))
   .map((t) => t.replace(/[^\p{L}\p{N}áéíóúüñ]/giu, ""))
   .filter((t) => t.length >= 3);
 
@@ -102,8 +107,8 @@ const scored = CASOS
     if (doms && !doms.includes(domOf(c))) return null;
     if (tierFilter && (c.tier || "") !== tierFilter) return null;
     if (sphereFilter && (c.sphere || "") !== sphereFilter) return null;
-    const title = (c.title || "").toLowerCase();
-    const body = (c.body || "").toLowerCase();
+    const title = norm(c.title || "");
+    const body = norm(c.body || "");
     let score = 0;
     for (const t of terms) {
       const inTitle = title.split(t).length - 1;
