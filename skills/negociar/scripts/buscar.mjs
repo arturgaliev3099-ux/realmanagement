@@ -115,7 +115,7 @@ const scored = CASOS
       const inBody = body.split(t).length - 1;
       score += inTitle * 3 + Math.min(inBody, 3); // cap body hits para no premiar repetición
     }
-    score *= TIER_BOOST[c.tier] || 1; // preferir casos ricos (diálogo + retroalimentación)
+    score *= c.peso ?? (TIER_BOOST[c.tier] || 1); // peso por longitud de la enseñanza (H3); TIER_BOOST solo si el casos.json es viejo y no trae `peso`
     return score > 0 ? { n: i + 1, c, score: +score.toFixed(2) } : null;
   })
   .filter(Boolean)

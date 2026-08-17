@@ -160,8 +160,8 @@ situations and getting it wrong in front of a room.
 
 | Sphere | Cases | | Quality | Cases |
 |---|--:|---|---|--:|
-| Work | 830 | | **A** — dialogue + teaching | 920 |
-| Social (neighbours, friends, haters) | 79 | | **B** — scenario + dialogue | 96 |
+| Work | 830 | | **A** — dialogue + teaching | 854 |
+| Social (neighbours, friends, haters) | 79 | | **B** — scenario + dialogue | 162 |
 | Couple | 72 | | **C** — fragmentary | 3 |
 | Family | 38 | | | |
 

@@ -231,7 +231,7 @@ están en `${CLAUDE_PLUGIN_ROOT}/skills/negociar/data/canon/00-ARQUITECTURA.md` 
 **Paso 3 — Recuperar el caso** que respalda la jugada, con el helper (determinista, no adivines):
 
 ```bash
-# buscar candidatos (título pesa x3; filtra por dominio; el score ya prioriza tier A):
+# buscar candidatos (título pesa x3; filtra por dominio; el score pondera por la riqueza de la enseñanza):
 node ${CLAUDE_PLUGIN_ROOT}/skills/negociar/scripts/buscar.mjs "términos del lío" --dom D3,D8 --n 6
 # solo casos con enseñanza rica (diálogo + retroalimentación de Arti):
 node ${CLAUDE_PLUGIN_ROOT}/skills/negociar/scripts/buscar.mjs "términos del lío" --dom D3,D8 --tier A
@@ -241,8 +241,9 @@ node ${CLAUDE_PLUGIN_ROOT}/skills/negociar/scripts/buscar.mjs "pareja pasado rep
 node ${CLAUDE_PLUGIN_ROOT}/skills/negociar/scripts/buscar.mjs --show 14
 ```
 
-Cada caso trae un **tier de calidad**: **A** = diálogo + retroalimentación de Arti (los mejores;
-el buscador ya les da más peso), **B** = escenario + diálogo sin enseñanza, **C** = fino/ruidoso.
+Cada caso trae un **tier de calidad**: **A** = diálogo + retroalimentación de Arti (todos traen el
+bloque de *Retroalimentación*; el buscador los pondera por la longitud de esa enseñanza, campo
+`peso`), **B** = escenario + diálogo sin enseñanza, **C** = fino/ruidoso.
 **Prefiere tier A** para respaldar la jugada. **Lee entero el bloque de *Retroalimentación* de los
 2-3 primeros candidatos, no solo del top-1** — la enseñanza de Arti (y la jugada exacta) suele estar
 ahí, y a veces en un caso con menos score que el primero; cita esa lógica, no el título.
